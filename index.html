@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>FitArena Fitness Club</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>FITARENA</h1>
+
+        <nav>
+
+            <a href="#home">Home</a>
+            <a href="#story">My Story</a>
+            <a href="#training">Training</a>
+            <a href="#nutrition">Nutrition</a>
+            <a href="#progress">Progress</a>
+
+        </nav>
+
+        <button onclick="startJourney()">
+            Start Journey
+        </button>
+
+    </header>
+
+
+    <section class="home" id="home">
+
+        <div class="home-text">
+
+            <p class="green">FITNESS CLUB</p>
+
+            <h2>
+                BUILD YOUR
+                <br>
+                <span>STRONGER SELF</span>
+            </h2>
+
+            <p>
+                Train better, eat better and
+                stay consistent with FitArena.
+            </p>
+
+            <button onclick="startJourney()">
+                Start Your Journey
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <section class="section" id="story">
+
+        <p class="green">MY STORY</p>
+
+        <h2>My Fitness Journey</h2>
+
+        <p class="story-text">
+
+            In 2024, I was 86 kg and I started noticing
+            that I was gaining a lot of body fat.
+
+            <br><br>
+
+            I decided to make a serious change in my
+            lifestyle. I started going to the gym and
+            followed a strict diet along with my training.
+
+            <br><br>
+
+            I avoided added sugar, unnecessary oil,
+            bakery items and junk food. I focused on
+            eating clean and staying consistent.
+
+            <br><br>
+
+            For training, I followed a Push-Pull-Legs
+            workout routine along with cardio.
+
+            <br><br>
+
+            The journey was not about changing in one day.
+            It was about following my routine, controlling
+            my diet and staying consistent.
+
+            <br><br>
+
+            This journey inspired me to create FitArena,
+            a platform that combines training, nutrition,
+            goals, challenges and progress in one place.
+
+        </p>
+
+
+        <div class="story-photos">
+
+            <div>
+
+                <img src="before.jpg" alt="My fitness journey before">
+
+                <p>Before</p>
+
+            </div>
+
+
+            <div>
+
+                <img src="after.jpg" alt="My fitness journey after">
+
+                <p>After</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section" id="training">
+
+        <p class="green">TRAINING PLAN</p>
+
+        <h2>Push Pull Legs</h2>
+
+        <p class="training-intro">
+            Follow a weekly training split with
+            different exercises for each day.
+        </p>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <h3>Monday - Push</h3>
+
+                <p>
+                    Chest, Shoulders and Triceps
+                </p>
+
+                <button onclick="showWorkout('Monday')">
+                    View Workout
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Tuesday - Pull</h3>
+
+                <p>
+                    Back and Biceps
+                </p>
+
+                <button onclick="showWorkout('Tuesday')">
+                    View Workout
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Wednesday - Legs</h3>
+
+                <p>
+                    Legs and Lower Body
+                </p>
+
+                <button onclick="showWorkout('Wednesday')">
+                    View Workout
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Thursday - Rest</h3>
+
+                <p>
+                    Recovery and light activity
+                </p>
+
+                <button onclick="showWorkout('Thursday')">
+                    View Day
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Friday - Push</h3>
+
+                <p>
+                    Chest, Shoulders and Triceps
+                </p>
+
+                <button onclick="showWorkout('Friday')">
+                    View Workout
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Saturday - Pull</h3>
+
+                <p>
+                    Back and Biceps
+                </p>
+
+                <button onclick="showWorkout('Saturday')">
+                    View Workout
+                </button>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>Sunday - Legs</h3>
+
+                <p>
+                    Legs and Lower Body
+                </p>
+
+                <button onclick="showWorkout('Sunday')">
+                    View Workout
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="training-result">
+
+        <h2 id="trainingTitle">
+            Select a Day
+        </h2>
+
+        <p id="trainingText">
+            Select a training day to see the exercises.
+        </p>
+
+    </section>
+
+
+    <section class="section" id="nutrition">
+
+    <p class="green">NUTRITION</p>
+
+    <h2>Daily Nutrition</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Breakfast</h3>
+
+            <p>
+                Eggs, oats and a banana
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Lunch</h3>
+
+            <p>
+                Rice, dal, vegetables and curd
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Pre-Workout</h3>
+
+            <p>
+                Banana, black coffee or light fruit
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Dinner</h3>
+
+            <p>
+                Roti, paneer or chicken and vegetables
+            </p>
+
+        </div>
+
+    </div>
+
+    <p class="note">
+        These are general meal ideas. Nutrition needs
+        can be different for each person.
+    </p>
+
+</section>
+
+
+    <section class="goal-section">
+
+        <p class="green">YOUR GOAL</p>
+
+        <h2>What Do You Want To Achieve?</h2>
+
+
+        <div class="goal-buttons">
+
+            <button onclick="chooseGoal('Build Strength')">
+                Build Strength
+            </button>
+
+            <button onclick="chooseGoal('Improve Fitness')">
+                Improve Fitness
+            </button>
+
+            <button onclick="chooseGoal('Stay Active')">
+                Stay Active
+            </button>
+
+        </div>
+
+
+        <h3 id="goalResult">
+            Choose a goal
+        </h3>
+
+    </section>
+
+
+    <section class="challenge-section">
+
+        <p class="green">TODAY'S CHALLENGE</p>
+
+        <h2>20 Push Ups</h2>
+
+        <p>
+            Complete today's challenge
+            and earn 50 XP.
+        </p>
+
+        <h3>
+            Your XP:
+            <span id="xp">100</span>
+        </h3>
+
+        <button onclick="completeChallenge()">
+            Complete Challenge
+        </button>
+
+    </section>
+
+
+    <section class="section" id="progress">
+
+        <p class="green">MY PROGRESS</p>
+
+        <h2>Track Your Journey</h2>
+
+
+        <div class="progress-box">
+
+
+            <div>
+
+                <h3>XP</h3>
+
+                <p id="progressXP">100</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Workouts</h3>
+
+                <p id="workouts">5</p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Training Days</h3>
+
+                <p>8</p>
+
+            </div>
+
+        </div>
+
+
+        <h3>Fitness Progress</h3>
+
+        <div class="progress-background">
+
+            <div class="progress-bar" id="progressBar"></div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <h2>FITARENA</h2>
+
+        <p>
+            Train. Eat. Improve.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
